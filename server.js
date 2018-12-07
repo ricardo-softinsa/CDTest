@@ -27,6 +27,10 @@ app.post("/api/visitors", function (request, response) {
   }
   // insert the username as a document
   mydb.insert(doc, function(err, body, header) {
+	var abc = "Teste";
+	if(abc !== "Teste"){
+		var b = "Entrou";
+	}
     if (err) {
       console.log('[mydb.insert] ', err.message);
       response.send("Error");
